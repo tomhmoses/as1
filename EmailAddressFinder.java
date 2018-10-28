@@ -1,4 +1,4 @@
-//package com.bham.pij.assignments.a1a;
+package com.bham.pij.assignments.a1a;
 
 // Tom Moses 1911437
 
@@ -24,7 +24,7 @@ public class EmailAddressFinder {
         BufferedReader reader = null;
         
         try {
-            reader = new BufferedReader(new FileReader("corrupteddb.txt"));
+            reader = new BufferedReader(new FileReader("corrupteddb"));
      
             String input = "";
            
@@ -74,7 +74,6 @@ public class EmailAddressFinder {
                 startLookingAt = endPosition;
             } else {
                 list.add(email);
-                System.out.println(email);
                 text = text.substring(endPosition);
                 startLookingAt = 0;
             }
